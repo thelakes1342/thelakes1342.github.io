@@ -1,0 +1,83 @@
+body{
+    margin: 10%;
+    background-color: rgb(117, 117, 117);
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    width: 100%;
+    background-image: url(image.jpg);
+    background-position: center center; 
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    padding: 2.5em 0em 2.5em 0em;
+}
+.contenedor {
+    display: flex;
+    flex-flow: column;
+}
+div{
+    display: flex;
+    flex-flow: row; 
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+}
+.columna-izquierda{
+    background-color: rgb(206, 206, 206);
+    width: 25%;
+    text-align: center;
+    padding: 0.6em;
+}
+#redes-sociales {
+    display: none;
+}
+.columna-derecha{
+    background-color: rgb(226, 226, 226);
+    width: 75%;
+    text-align: justify;
+    padding:2.5em;
+}
+#habilidades-experiencia{
+    text-align: justify;
+    list-style-type: disc;
+}
+img{
+    margin: 20%;
+    border-radius:50%;
+    height: 50%;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        margin:0%;
+         font-size: 12px;  
+    }
+}
+
+@media screen and (max-width:500px){
+    body{
+        font-size: 10px;
+    }
+    div{
+        display: flex;
+        flex-flow: column;
+}
+.columna-izquierda{
+    width: 100%;
+}
+.columna-derecha {
+  width:100%;
+}
+#fila3{
+    flex-flow: column-reverse;
+}
+#perfil {
+    background-color:rgb(206, 206, 206);
+    text-align: center;
+}
+}
